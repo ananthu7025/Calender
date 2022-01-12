@@ -1,0 +1,102 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "sidebar"
+                       "content";
+  width: 100vw; 
+  height: 100vh;
+}
+
+@media screen and (min-width: 850px) {
+  .wrapper {
+    grid-template-columns: 200px 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+main {
+  grid-area: content;
+  padding: 48px;
+}
+
+.sidebar {
+  background-color: white;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
+
+}
+.days {
+  
+  position: relative;
+  font-size: 18px;
+  margin-left: 69px;
+  
+  word-spacing: 136px;
+  font-weight: 600;
+}
+.menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+}
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 100;
+  color: #A8B2B9;
+}
+main {
+  background-color: white;
+}
+.day:hover {
+  background-color: red;
+  color: red;
+  cursor: pointer;
+  box-shadow: 0 0 0px #ff96ad,0 0 -2px #ff96ad,0 0 5px #ff96ad;
+}
+
+
+.calendar {
+  background-color: wheat;
+  border: 1px solid #e1e1e1;
+}
+
+.calendar .day{
+  position: relative;
+  width: calc(100%/7);
+  height: 90px;
+  display: inline-block;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "sidebar"
+                       "content";
+}
+.Ricon{
+  float: right;
+  margin-top: -50px;
+}
+.Monthyear{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-top: -15px;
+}
+.heading{
+margin-left: 500px;
+  font-size: 50px;
+  margin-top: -60px;
+
+}
