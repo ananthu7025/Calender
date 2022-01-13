@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
 import List from "./List";
 import build from "./bulid";
-import "react-calendar/dist/Calendar.css";
+
 import Header from "./Header";
 import moment from "moment";
 
